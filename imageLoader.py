@@ -63,7 +63,7 @@ if __name__ == '__main__':
                         if not counter:
                             to_download.append((prod_id, img.decode()))
                         else:
-                            to_download.append(('_'.join((prod_id, str(counter))), img.decode()))
+                            to_download.append(('-'.join((prod_id, str(counter))), img.decode()))
                         counter += 1
                         if counter > 255:
                             break
